@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+int n,x;
+int len=n-1;
+scanf("%d",&n);
+display(x,0,len);
+}
+void display(int x[],int start,int end)
+{
+if(start>end)
+return;
+else
+printf("%d\n",x[start]);
+display(start+1,end);
+} 
